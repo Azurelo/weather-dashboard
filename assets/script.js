@@ -10,6 +10,7 @@ fetch(file)
 .then((response) => response.json())
 .then((data) => {
 // Weather main data
+console.log(data);
 let main = data.current.weather[0].main;
 let description = data.current.weather[0].description;
 let temp = Math.round(data.current.temp);
@@ -24,39 +25,39 @@ document.getElementById("wrapper-humidity").innerHTML = humidity + "%";
 document.getElementById("wrapper-name").innerHTML = name;
 
 // Weather hourly data
-let hourNow = data.hourly[0].temp;
+/* let hourNow = data.hourly[0].temp;
 let hour1 = data.hourly[1].temp;
 let hour2 = data.hourly[2].temp;
 let hour3 = data.hourly[3].temp;
 let hour4 = data.hourly[4].temp;
-let hour5 = data.hourly[5].temp;
+let hour5 = data.hourly[5].temp; */
 
-document.getElementById("wrapper-hour-now").innerHTML = hourNow + "°";
+/* document.getElementById("wrapper-hour-now").innerHTML = hourNow + "°";
 document.getElementById("wrapper-hour1").innerHTML = hour1 + "°";
 document.getElementById("wrapper-hour2").innerHTML = hour2 + "°";
 document.getElementById("wrapper-hour3").innerHTML = hour3 + "°";
 document.getElementById("wrapper-hour4").innerHTML = hour4 + "°";
-document.getElementById("wrapper-hour5").innerHTML = hour5 + "°";
+document.getElementById("wrapper-hour5").innerHTML = hour5 + "°"; */
 
 // Time
-let timeNow = new Date().getHours();
-let time1 = timeNow + 1;
-let time2 = time1 + 1;
+/* let timeNow = new Date().getHours(); */
+/* let time1 = timeNow + 1; */
+/* let time2 = time1 + 1;
 let time3 = time2 + 1;
 let time4 = time3 + 1;
-let time5 = time4 + 1;
+let time5 = time4 + 1; */
 
-document.getElementById("wrapper-time1").innerHTML = time1;
-document.getElementById("wrapper-time2").innerHTML = time2;
+/* document.getElementById("wrapper-time1").innerHTML = time1; */
+/* document.getElementById("wrapper-time2").innerHTML = time2;
 document.getElementById("wrapper-time3").innerHTML = time3;
 document.getElementById("wrapper-time4").innerHTML = time4;
-document.getElementById("wrapper-time5").innerHTML = time5;
+document.getElementById("wrapper-time5").innerHTML = time5; */
 
 // Weather daily data
 let tomorrowTemp = Math.round(data.daily[0].temp.day);
 let dATTemp = Math.round(data.daily[1].temp.day);
-let tomorrowMain = data.daily[0].weather[0].main;
-let dATTempMain = data.daily[1].weather[0].main;
+/* let tomorrowMain = data.daily[0].weather[0].main;
+let dATTempMain = data.daily[1].weather[0].main; */
 
 document.getElementById("wrapper-forecast-temp-today").innerHTML =
 temp + "°";
