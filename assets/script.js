@@ -2,7 +2,7 @@
 let queryUrl = "https://api.openweathermap.org/data/2.5/onecall?";
 let lat = "lat=52.229676&";
 let lon = "lon=21.012229&";
-let apiOptions = "units=metric&exclude=minutely,alerts&";
+let apiOptions = "units=imperial&exclude=minutely,alerts&";
 let apiKey = "appid=dbb76c5d98d5dbafcb94441c6a10236e";
 let file = queryUrl + lat + lon + apiOptions + apiKey;
 
@@ -18,9 +18,9 @@ let humidity = data.current.humidity;
 let name = "Warsaw";
 
 document.getElementById("wrapper-description").innerHTML = description;
-document.getElementById("wrapper-temp").innerHTML = temp + "°C";
+document.getElementById("wrapper-temp").innerHTML = temp + "°F";
 document.getElementById("wrapper-pressure").innerHTML = pressure;
-document.getElementById("wrapper-humidity").innerHTML = humidity + "°C";
+document.getElementById("wrapper-humidity").innerHTML = humidity + "%";
 document.getElementById("wrapper-name").innerHTML = name;
 
 // Weather hourly data
