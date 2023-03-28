@@ -11,12 +11,7 @@ on using fetch request.
 https://azurelo.github.io/weather-dashboard/
 
 ## Snapshots
-![image](https://user-images.githubusercontent.com/114710827/208486830-8f1cf14b-c20d-453b-a2dc-c2fa18fd0937.png)
+![image](https://user-images.githubusercontent.com/114710827/228358029-2786512d-40ec-466d-883d-f723e2d3c945.png)
 
 This website can be used to see the weather in a searched city over a 5 day period
 
-## License
-
-Refer to the LICENSE in rep.
-
----
